@@ -1,399 +1,344 @@
-let qualifications2026 = new QualificationsAnnuelle();
+let qualifications2026 = new ClassementQualificatif();
 
-// FIXME : put actual 2026 result there
-qualifications2026.ajouter(new Qualification({
-    nom: 'Launaguet Journée 1',
-    duree: 'journée',
-    classement: [
-        'Knurlnien',
-        'Chapelier',
-        'Beerserkr',
-        'El_chatardo',
-        'Pantoufle',
-        'BOSS',
-        'Le_Cul_de_Jatte',
-        'biak40',
-        'Kutchuc',
-        'EDAEPHNOS',
-        'krypt',
-        'Nabot',
-        'Astrabell',
-        'MaSeDrIm'
-    ]
-}));
+let launaguet1 = EvenementQualificatif.nommé('Launaguet Journée 1')
+    .surUnJour()
+    .avecPourClassement()
+        .enPremier('Knurlnien')
+        .puis('Chapelier')
+        .puis('Beerserkr')
+        .puis('El_chatardo')
+        .puis('Pantoufle')
+        .puis('BOSS')
+        .puis('Le_Cul_de_Jatte')
+        .puis('biak40')
+        .puis('Kutchuc')
+        .puis('EDAEPHNOS')
+        .puis('krypt')
+        .puis('Nabot')
+        .puis('Astrabell')
+        .enDernier('MaSeDrIm');
+qualifications2026.ajouter(launaguet1);
 
-qualifications2026.ajouter(new Qualification({
-    nom: 'Launaguet Journée 2',
-    duree: 'journée',
-    classement: [
-        'Nayko_le_Rat',
-        'Le_Cul_de_Jatte',
-        'Nabot',
-        'El_chatardo',
-        'Beerserkr',
-        'Chapelier',
-        'krypt',
-        'Kutchuc',
-        'Astrabell',
-        'EDAEPHNOS',
-        'MaSeDrIm',
-        'Pantoufle'
-    ]
-}));
+let launaguet2 = EvenementQualificatif.nommé('Launaguet Journée 2')
+    .surUnJour()
+    .avecPourClassement()
+        .enPremier('Nayko_le_Rat')
+        .puis('Le_Cul_de_Jatte')
+        .puis('Nabot')
+        .puis('El_chatardo')
+        .puis('Beerserkr')
+        .puis('Chapelier')
+        .puis('krypt')
+        .puis('Kutchuc')
+        .puis('Astrabell')
+        .puis('EDAEPHNOS')
+        .puis('MaSeDrIm')
+        .enDernier('Pantoufle');
+qualifications2026.ajouter(launaguet2);
 
-qualifications2026.ajouter(new Qualification({
-    nom: 'King in the North VI',
-    duree: 'week-end',
-    classement: [
-        'Iblis',
-        'walach',
-        'Orckel',
-        'Julo62',
-        'expunk',
-        'BrG',
-        'Alexlesec',
-        'Kenozan',
-        'KENZO',
-        'Pattopesto'
-    ]
-}));
+let kingInTheNorth = EvenementQualificatif.nommé('King in the North VI')
+    .surUnWeekEnd()
+    .avecPourClassement()
+        .enPremier('Iblis')
+        .puis('walach')
+        .puis('Orckel')
+        .puis('Julo62')
+        .puis('expunk')
+        .puis('BrG')
+        .puis('Alexlesec')
+        .puis('Kenozan')
+        .puis('KENZO')
+        .enDernier('Pattopesto');
+qualifications2026.ajouter(kingInTheNorth);
 
-qualifications2026.ajouter(new Qualification({
-    nom: 'Havoc at the Brewery',
-    duree: 'journée',
-    classement: [
-        'Dunk',
-        'Tenekha',
-        'Kappa_Shop',
-        'Garuses',
-        'BrG',
-        'TheDoc',
-        'Lebic',
-        'Gv15_19_20',
-        'DerHeldderWelt',
-        'Aldarion',
-        'Thalantir',
-        'Marmiu'
-    ]
-}));
+let havocBrewery = EvenementQualificatif.nommé('Havoc at the Brewery')
+    .surUnJour()
+    .avecPourClassement()
+        .enPremier('Dunk')
+        .puis('Tenekha')
+        .puis('Kappa_Shop')
+        .puis('Garuses')
+        .puis('BrG')
+        .puis('TheDoc')
+        .puis('Lebic')
+        .puis('Gv15_19_20')
+        .puis('DerHeldderWelt')
+        .puis('Aldarion')
+        .puis('Thalantir')
+        .enDernier('Marmiu');
+qualifications2026.ajouter(havocBrewery);
 
-qualifications2026.ajouter(new Qualification({
-    nom: 'La Castagne III',
-    duree: 'journée',
-    classement: [
-        'Nayko_le_Rat',
-        'Dablama',
-        'Jarekson',
-        'Siilence',
-        'AEnoriel',
-        'Dalendur'
-    ]
-}));
+let castagne3 = EvenementQualificatif.nommé('La Castagne III')
+    .surUnJour()
+    .avecPourClassement()
+        .enPremier('Nayko_le_Rat')
+        .puis('Dablama')
+        .puis('Jarekson')
+        .puis('Siilence')
+        .puis('AEnoriel')
+        .enDernier('Dalendur');
+qualifications2026.ajouter(castagne3);
 
-qualifications2026.ajouter(new Qualification({
-    nom: 'Le muton Noir 2025',
-    duree: 'week-end',
-    classement: [
-        'Knurlnien',
-        'kentx',
-        'MyNicknameIsBetterThanYours',
-        'Twerk',
-        'Iblis',
-        'Nayko_le_Rat',
-        'Leff',
-        'expunk',
-        'Kintz',
-        'AVL',
-        'Le_Cul_de_Jatte',
-        'Beerserkr',
-        'Julo62',
-        'krypt',
-        'Ketep',
-        'LuciusForge',
-        'Orckel',
-        'Kutchuc',
-        'BOSS',
-        'Fao',
-        'Poliorcetic',
-        'Siilence',
-        'Mamatt89',
-        'Jawjaw'
-    ]
-}));
+let mutonNoir = EvenementQualificatif.nommé('Le muton Noir 2025')
+    .surUnWeekEnd()
+    .avecPourClassement()
+        .enPremier('Knurlnien')
+        .puis('kentx')
+        .puis('MyNicknameIsBetterThanYours')
+        .puis('Twerk')
+        .puis('Iblis')
+        .puis('Nayko_le_Rat')
+        .puis('Leff')
+        .puis('expunk')
+        .puis('Kintz')
+        .puis('AVL')
+        .puis('Le_Cul_de_Jatte')
+        .puis('Beerserkr')
+        .puis('Julo62')
+        .puis('krypt')
+        .puis('Ketep')
+        .puis('LuciusForge')
+        .puis('Orckel')
+        .puis('Kutchuc')
+        .puis('BOSS')
+        .puis('Fao')
+        .puis('Poliorcetic')
+        .puis('Siilence')
+        .puis('Mamatt89')
+        .enDernier('Jawjaw');
+qualifications2026.ajouter(mutonNoir);
 
-qualifications2026.ajouter(new Qualification({
-    nom: 'La Big Bourgogne Cup',
-    duree: 'week-end',
-    classement: [
-        'AVL',
-        'Nayko_le_Rat',
-        'Kintz',
-        'expunk',
-        'MyNicknameIsBetterThanYours',
-        'kentx',
-        'Julo62',
-        'Orckel',
-        'walach',
-        'morphee_joker',
-        'VargLeRedoutable',
-        'Ketep',
-        'Maximork',
-        'Jarekson',
-        'Kenozan',
-        'LuciusForge',
-        'Jawjaw',
-        'Mamatt89',
-        'Sousou',
-        'wil_ly'
-    ]
-}));
+let bigBourgogne = EvenementQualificatif.nommé('La Big Bourgogne Cup')
+    .surUnWeekEnd()
+    .avecPourClassement()
+        .enPremier('AVL')
+        .puis('Nayko_le_Rat')
+        .puis('Kintz')
+        .puis('expunk')
+        .puis('MyNicknameIsBetterThanYours')
+        .puis('kentx')
+        .puis('Julo62')
+        .puis('Orckel')
+        .puis('walach')
+        .puis('morphee_joker')
+        .puis('VargLeRedoutable')
+        .puis('Ketep')
+        .puis('Maximork')
+        .puis('Jarekson')
+        .puis('Kenozan')
+        .puis('LuciusForge')
+        .puis('Jawjaw')
+        .puis('Mamatt89')
+        .puis('Sousou')
+        .enDernier('wil_ly');
+qualifications2026.ajouter(bigBourgogne);
 
-qualifications2026.ajouter(new Qualification({
-    nom: "GUILD 'Con 2025",
-    duree: 'journée',
-    classement: [
-        'Chapelier',
-        'Knurlnien',
-        'CH1PS',
-        'Kutchuc',
-        'Beerserkr',
-        'Beji',
-        'Pantoufle',
-        'MaSeDrIm',
-        'Nabot',
-        'Garzak',
-        'Emariv',
-        'Helvain',
-    ]
-}));
+let guildCon = EvenementQualificatif.nommé("GUILD 'Con 2025")
+    .surUnJour()
+    .avecPourClassement()
+        .enPremier('Chapelier')
+        .puis('Knurlnien')
+        .puis('CH1PS')
+        .puis('Kutchuc')
+        .puis('Beerserkr')
+        .puis('Beji')
+        .puis('Pantoufle')
+        .puis('MaSeDrIm')
+        .puis('Nabot')
+        .puis('Garzak')
+        .puis('Emariv')
+        .enDernier('Helvain');
+qualifications2026.ajouter(guildCon);
 
-qualifications2026.ajouter(new Qualification({
-    nom: "Lille 2",
-    duree: 'journée',
-    classement: [
-        'Julo62',
-        'expunk',
-        'Iblis',
-        'Theodrid',
-        'walach',
-        'Alexlesec',
-        'Fao',
-        'Miguel Angel Santiago',
-        'Oscar Malaga',
-        'Orckel',
-        'LuciusForge',
-        'Sousou',
-        'KENZO',
-        'impair'
-    ]
-}));
+let lille2 = EvenementQualificatif.nommé('Lille 2')
+    .surUnJour()
+    .avecPourClassement()
+        .enPremier('Julo62')
+        .puis('expunk')
+        .puis('Iblis')
+        .puis('Theodrid')
+        .puis('walach')
+        .puis('Alexlesec')
+        .puis('Fao')
+        .puis('Miguel Angel Santiago')
+        .puis('Oscar Malaga')
+        .puis('Orckel')
+        .puis('LuciusForge')
+        .puis('Sousou')
+        .puis('KENZO')
+        .enDernier('impair');
+qualifications2026.ajouter(lille2);
 
-qualifications2026.ajouter(new Qualification({
-    nom: "Lille 1",
-    duree: 'journée',
-    classement: [
-        'Iblis',
-        'Theodrid',
-        'Alexlesec',
-        'Orckel',
-        'Oscar Malaga',
-        'Miguel Angel Santiago',
-        'walach',
-        'expunk',
-        'ollv',
-        'Crom-_-',
-        'LuciusForge',
-        'Sousou',
-        'Fao',
-        'Julo62',
-        'KENZO',
-        'meg',
-        'Galahad59',
-        'impair'
-    ]
-}));
+let lille1 = EvenementQualificatif.nommé('Lille 1')
+    .surUnJour()
+    .avecPourClassement()
+        .enPremier('Iblis')
+        .puis('Theodrid')
+        .puis('Alexlesec')
+        .puis('Orckel')
+        .puis('Oscar Malaga')
+        .puis('Miguel Angel Santiago')
+        .puis('walach')
+        .puis('expunk')
+        .puis('ollv')
+        .puis('Crom-_-')
+        .puis('LuciusForge')
+        .puis('Sousou')
+        .puis('Fao')
+        .puis('Julo62')
+        .puis('KENZO')
+        .puis('meg')
+        .puis('Galahad59')
+        .enDernier('impair');
+qualifications2026.ajouter(lille1);
 
-qualifications2026.ajouter(new Qualification({
-    nom: 'Clash of Charnay',
-    duree: 'week-end',
-    classement: [
-        'Dablama',
-        'Nayko_le_Rat',
-        'Kintz',
-        'morphee_joker',
-        'BrG',
-        'Jarekson',
-        'LuciusForge',
-        'VargLeRedoutable',
-        'MyNicknameIsBetterThanYours',
-        'Maximork',
-        'Argozs_Nai_Quasser',
-        'Jawjaw',
-        'kraspeck',
-        'magoran',
-        'Arkhaon',
-        'Thorgrimleouf',
-        'Lancelot71',
-        'erwik',
-        'Proteus',
-        'anonyme'
-    ]
-}));
+let clashCharnay = EvenementQualificatif.nommé('Clash of Charnay')
+    .surUnWeekEnd()
+    .avecPourClassement()
+        .enPremier('Dablama')
+        .puis('Nayko_le_Rat')
+        .puis('Kintz')
+        .puis('morphee_joker')
+        .puis('BrG')
+        .puis('Jarekson')
+        .puis('LuciusForge')
+        .puis('VargLeRedoutable')
+        .puis('MyNicknameIsBetterThanYours')
+        .puis('Maximork')
+        .puis('Argozs_Nai_Quasser')
+        .puis('Jawjaw')
+        .puis('kraspeck')
+        .puis('magoran')
+        .puis('Arkhaon')
+        .puis('Thorgrimleouf')
+        .puis('Lancelot71')
+        .puis('erwik')
+        .puis('Proteus')
+        .enDernier('anonyme');
+qualifications2026.ajouter(clashCharnay);
 
-qualifications2026.ajouter(new Qualification({
-    nom: 'Lice Lemovices',
-    duree: 'week-end',
-    classement: [
-        'Maximork',
-        'CH1PS',
-        'Kutchuc',
-        'LuciusForge',
-        'krypt',
-        'Kintz',
-        'Le_Cul_de_Jatte',
-        'Nabot',
-        'Beerserkr',
-        'BOSS',
-        'Helvain',
-        'Jawjaw'
-    ]
-}));
+let liceLemovices = EvenementQualificatif.nommé('Lice Lemovices')
+    .surUnWeekEnd()
+    .avecPourClassement()
+        .enPremier('Maximork')
+        .puis('CH1PS')
+        .puis('Kutchuc')
+        .puis('LuciusForge')
+        .puis('krypt')
+        .puis('Kintz')
+        .puis('Le_Cul_de_Jatte')
+        .puis('Nabot')
+        .puis('Beerserkr')
+        .puis('BOSS')
+        .puis('Helvain')
+        .enDernier('Jawjaw');
+qualifications2026.ajouter(liceLemovices);
 
-qualifications2026.ajouter(new Qualification({
-    nom: 'small bourgogne cup',
-    duree: 'journée',
-    classement: [
-        'Maximork',
-        'MyNicknameIsBetterThanYours',
-        'firegantelet',
-        'Kintz',
-        'Jawjaw',
-        'LuciusForge',
-        'Balthus',
-        'Sousou'
-    ]
-}));
+let smallBourgogne = EvenementQualificatif.nommé('small bourgogne cup')
+    .surUnJour()
+    .avecPourClassement()
+        .enPremier('Maximork')
+        .puis('MyNicknameIsBetterThanYours')
+        .puis('firegantelet')
+        .puis('Kintz')
+        .puis('Jawjaw')
+        .puis('LuciusForge')
+        .puis('Balthus')
+        .enDernier('Sousou');
+qualifications2026.ajouter(smallBourgogne);
 
-qualifications2026.ajouter(new Qualification({
-    nom: 'Olympias Rheni 2',
-    duree: 'week-end',
-    classement: [
-        'Knurlnien',
-        'Jarekson',
-        'BrG',
-        'Bichette',
-        'VargLeRedoutable',
-        'Zeeloy'
-    ]
-}));
+let olympiasRheni = EvenementQualificatif.nommé('Olympias Rheni 2')
+    .surUnWeekEnd()
+    .avecPourClassement()
+        .enPremier('Knurlnien')
+        .puis('Jarekson')
+        .puis('BrG')
+        .puis('Bichette')
+        .puis('VargLeRedoutable')
+        .enDernier('Zeeloy');
+qualifications2026.ajouter(olympiasRheni);
 
-qualifications2026.ajouter(new Qualification({
-    nom: 'La Castagne V',
-    duree: 'journée',
-    classement: [
-        'Jarekson',
-        'AEnoriel',
-        'Pinus',
-        'Siilence'
-    ]
-}));
+let castagne5 = EvenementQualificatif.nommé('La Castagne V')
+    .surUnJour()
+    .avecPourClassement()
+        .enPremier('Jarekson')
+        .puis('AEnoriel')
+        .puis('Pinus')
+        .enDernier('Siilence');
+qualifications2026.ajouter(castagne5);
 
-qualifications2026.ajouter(new Qualification({
-    nom: 'Lices de Bourgueil',
-    duree: 'week-end',
-    classement: [
-        'Knurlnien',
-        'AVL',
-        'Beerserkr',
-        'krypt',
-        'MyNicknameIsBetterThanYours',
-        'Le_Cul_de_Jatte',
-        'Dablama',
-        'Ketep',
-        'Poliorcetic',
-        'Kutchuc',
-        'Chapelier',
-        'CH1PS',
-        'Leff',
-        'pepestilence',
-        'Jawjaw',
-        'MaSeDrIm'
-    ]
-}));
+let licesBourgueil = EvenementQualificatif.nommé('Lices de Bourgueil')
+    .surUnWeekEnd()
+    .avecPourClassement()
+        .enPremier('Knurlnien')
+        .puis('AVL')
+        .puis('Beerserkr')
+        .puis('krypt')
+        .puis('MyNicknameIsBetterThanYours')
+        .puis('Le_Cul_de_Jatte')
+        .puis('Dablama')
+        .puis('Ketep')
+        .puis('Poliorcetic')
+        .puis('Kutchuc')
+        .puis('Chapelier')
+        .puis('CH1PS')
+        .puis('Leff')
+        .puis('pepestilence')
+        .puis('Jawjaw')
+        .enDernier('MaSeDrIm');
+qualifications2026.ajouter(licesBourgueil);
 
-qualifications2026.ajouter(new Qualification({
-    nom: 'TAK VI',
-    duree: 'week-end',
-    classement: [
-        'Kintz',
-        'Knurlnien',
-        'MyNicknameIsBetterThanYours',
-        'Julo62',
-        'Le_Cul_de_Jatte',
-        'Kutchuc',
-        'Twerk',
-        'Dablama',
-        'Orckel',
-        'firegantelet',
-        'El_chatardo',
-        'Demo',
-        'LuciusForge',
-        'Leloup',
-        'Siilence',
-        'Dalendur',
-        'Helvain',
-        'AEnoriel',
-        'Rako',
-        'Pinus',
-        'Jawjaw',
-        'Morzaad',
-        'Sousou',
-        'Wugga'
-    ]
-}));
+let tak6 = EvenementQualificatif.nommé('TAK VI')
+    .surUnWeekEnd()
+    .avecPourClassement()
+        .enPremier('Kintz')
+        .puis('Knurlnien')
+        .puis('MyNicknameIsBetterThanYours')
+        .puis('Julo62')
+        .puis('Le_Cul_de_Jatte')
+        .puis('Kutchuc')
+        .puis('Twerk')
+        .puis('Dablama')
+        .puis('Orckel')
+        .puis('firegantelet')
+        .puis('El_chatardo')
+        .puis('Demo')
+        .puis('LuciusForge')
+        .puis('Leloup')
+        .puis('Siilence')
+        .puis('Dalendur')
+        .puis('Helvain')
+        .puis('AEnoriel')
+        .puis('Rako')
+        .puis('Pinus')
+        .puis('Jawjaw')
+        .puis('Morzaad')
+        .puis('Sousou')
+        .enDernier('Wugga');
+qualifications2026.ajouter(tak6);
 
-qualifications2026.ajouter(new Qualification({
-    nom: 'Marche Barbare 5',
-    duree: 'journée',
-    classement: [
-        'Crom-_-',
-        'Alex_59',
-        'Kheps',
-        'Alexlesec'
-    ]
-}));
+let marcheBarbare = EvenementQualificatif.nommé('Marche Barbare 5')
+    .surUnJour()
+    .avecPourClassement()
+        .enPremier('Crom-_-')
+        .puis('Alex_59')
+        .puis('Kheps')
+        .enDernier('Alexlesec');
+qualifications2026.ajouter(marcheBarbare);
 
-qualifications2026.ajouter(new Qualification({
-    nom: 'The king of the hill',
-    duree: 'week-end',
-    classement: [
-        'Beerserkr',
-        'Vince3310',
-        'Ketep',
-        'Pantoufle',
-        'Le_Cul_de_Jatte',
-        'Beji',
-        'Chapelier',
-        'Nabot',
-        'krypt',
-        'Gorgorbey',
-        'Flopus_hodus',
-        'Helvain'
-    ]
-}));
-
-$(document).ready(function () {
-    $('#myTable').DataTable({
-        "pageLength": -1,
-        "paging": false,
-        "info": false,
-        responsive: true,
-        data: classement2025,
-        columns: [
-            {data: 'Joueur'},
-            {data: 'Evenements'},
-            {data: 'Points'},
-            {data: 'Classement'}
-        ]
-    });
-});
+let kingOfHill = EvenementQualificatif.nommé('The king of the hill')
+    .surUnWeekEnd()
+    .avecPourClassement()
+        .enPremier('Beerserkr')
+        .puis('Vince3310')
+        .puis('Ketep')
+        .puis('Pantoufle')
+        .puis('Le_Cul_de_Jatte')
+        .puis('Beji')
+        .puis('Chapelier')
+        .puis('Nabot')
+        .puis('krypt')
+        .puis('Gorgorbey')
+        .puis('Flopus_hodus')
+        .enDernier('Helvain');
+qualifications2026.ajouter(kingOfHill);
