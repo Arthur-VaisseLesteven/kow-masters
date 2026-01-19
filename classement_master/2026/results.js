@@ -1,4 +1,4 @@
-let qualifications2026 = new ClassementQualificatif();
+const qualifications2026 = new ClassementQualificatif();
 
 let launaguet1 = EvenementQualificatif.nommé('Launaguet Journée 1')
     .surUnJour()
