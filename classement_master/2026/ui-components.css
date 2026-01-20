@@ -1,0 +1,52 @@
+visualisation-classement-qualificatif {
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.header-line,
+.player-card {
+    display: flex;
+    padding: 12px 16px;
+}
+
+.header-line {
+    background-color: #2c3e50;
+    color: white;
+    font-weight: bold;
+}
+
+.player-card {
+    background-color: #ecf0f1;
+    border-bottom: 1px solid #bdc3c7;
+}
+
+.player-card:hover {
+    background-color: #d5dbdb;
+}
+
+.header-line span,
+.player-card span {
+    flex: 1;
+    text-align: center;
+}
+
+.col-rank {
+    flex: 0.5 !important;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.col-username {
+    flex: 2 !important;
+    text-align: left !important;
+    font-weight: 500;
+    color: #2c3e50;
+}
+
+.header-line .col-rank,
+.header-line .col-username {
+    color: white;
+}
+
