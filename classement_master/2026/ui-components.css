@@ -17,6 +17,10 @@ visualisation-classement-qualificatif {
     font-weight: bold;
 }
 
+.header-line span[data-column]:hover {
+    background-color: #34495e;
+}
+
 .player-card {
     background-color: #ecf0f1;
     border-bottom: 1px solid #bdc3c7;
