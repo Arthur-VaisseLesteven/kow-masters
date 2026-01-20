@@ -24,6 +24,7 @@ class VisualisationClassementQualificatif extends HTMLElement {
                         pseudonyme="${joueur.Joueur}"
                         evenements="${joueur.Evenements}"
                         points="${joueur.Points}"
+                        region="${joueur.Region}"
                     ></classement-individuel>`
                 }).join('')}
             </div>    
@@ -47,7 +48,7 @@ class ClassementIndividuel extends HTMLElement {
                 <span class="col-username">${this.getAttribute('pseudonyme')}</span>
                 <span class="col-events">Events: ${this.getAttribute('evenements')}</span>
                 <span class="col-points">Points: ${this.getAttribute('points')}</span>
-                <span class="col-region">Région: TODO</span>
+                <span class="col-region">${this.getAttribute('region')}</span>
             </div>
         `;
     }

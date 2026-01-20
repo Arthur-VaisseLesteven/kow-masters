@@ -26,6 +26,7 @@ class ClassementQualificatif {
                 Points: classements.sort(function (c1, c2) {
                     return c2.score - c1.score
                 }).slice(0, 4).map(c => c.score).reduce((a, b) => a + b, 0),
+                Region: JoueursEtRegions[pseudonyme] || 'Inconnue'
             })
         }
 

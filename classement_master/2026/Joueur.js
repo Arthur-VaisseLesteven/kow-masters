@@ -1,6 +1,23 @@
-class Joueur {
-    constructor(pseudonyme, region) {
-        this.pseudonyme = pseudonyme;
-        this.region = region;
-    }
-}
+const JoueursEtRegions = {
+    Knurlnien: 'Sud',
+    Nayko_le_Rat: 'Sud',
+    Kutchuc: 'Sud',
+    Jarekson: 'Sud-Est',
+    Dunk: 'Grand-Est',
+    Thalantir: 'Grand-Est',
+    Jawjaw: 'Est',
+    Tenekha: 'Grand-Est',
+    LuciusForge: 'Est',
+    Sousou: 'Est',
+    Morzaad: 'Sud-Est',
+    VargLeRedoutable: 'Grand-Est',
+    Taybard: 'Grand-Est',
+    MaSeDrIm: 'Sud',
+    BOSS: 'Sud',
+    Chapelier:'Sud-Ouest',
+    Lauzerg974: 'Sud',
+    El_chatardo: 'Sud',
+    biak40: 'Sud-Ouest',
+    Ysardul: 'Sud',
+    Helvain: 'Sud'
+};
