@@ -15,7 +15,9 @@ class EvenementQualificatif {
                 pseudonyme: this.donnees.classement[i],
                 classementIndividuel: {
                     nom: this.donnees.nom,
-                    score: this.score(i, this.donnees.classement.length, this.donnees.duree)
+                    score: this.score(i, this.donnees.classement.length, this.donnees.duree),
+                    rang: i+1,
+                    totalParticipants: this.donnees.classement.length
                 }
             })
         }

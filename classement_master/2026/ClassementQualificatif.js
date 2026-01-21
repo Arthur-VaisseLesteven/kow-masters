@@ -17,16 +17,17 @@ class ClassementQualificatif {
         let classement = []
 
         for (const [pseudonyme, classements] of Object.entries(this.joueurs)) {
-            classements.sort(function (c1, c2) {
+            const sortedClassements = classements.sort(function (c1, c2) {
                 return c2.score - c1.score
-            }).slice(0, 4);
+            });
+            const top4 = sortedClassements.slice(0, 4);
+
             classement.push({
                 Joueur: pseudonyme,
                 Evenements: classements.length,
-                Points: classements.sort(function (c1, c2) {
-                    return c2.score - c1.score
-                }).slice(0, 4).map(c => c.score).reduce((a, b) => a + b, 0),
-                Region: JoueursEtRegions[pseudonyme] || 'Inconnue'
+                Points: top4.map(c => c.score).reduce((a, b) => a + b, 0),
+                Region: JoueursEtRegions[pseudonyme] || 'Inconnue',
+                Details: classements
             })
         }
 
