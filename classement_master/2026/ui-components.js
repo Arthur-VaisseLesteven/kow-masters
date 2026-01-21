@@ -57,9 +57,15 @@ class VisualisationClassementQualificatif extends HTMLElement {
                         evenements="${joueur.Evenements}"
                         points="${joueur.Points}"
                         region="${joueur.Region}"
+                        ${joueur.Details.map((event, index) => `
+                            event-${index}-name="${event.nom}"
+                            event-${index}-score="${event.score}"
+                            event-${index}-rank="${event.rang}"
+                            event-${index}-total="${event.totalParticipants}"
+                        `).join('')}
                     ></classement-individuel>`
                 }).join('')}
-            </div>    
+            </div>
         `;
 
         // Attach click event listeners to header cells
@@ -93,12 +99,87 @@ class ClassementIndividuel extends HTMLElement {
                 <span class="col-rank">#${this.getAttribute('rang')}</span>
                 <span class="col-username">${this.getAttribute('pseudonyme')}</span>
                 <span class="col-events">${this.getAttribute('evenements')}</span>
-                <span class="col-points">${this.getAttribute('points')}</span>
+                <span class="col-points clickable">${this.getAttribute('points')}</span>
                 <span class="col-region">${this.getAttribute('region')}</span>
             </div>
         `;
+
+        this.querySelector('.col-points').addEventListener('click', () => this.showDetailsPopin());
+    }
+
+    showDetailsPopin() {
+        document.body.appendChild(new DetailsPopin({pseudonyme: this.getAttribute('pseudonyme'), details: this.#eventDetails()}));
+    }
+
+    #eventDetails() {
+        const details = [];
+        let index = 0;
+        while (this.hasAttribute(`event-${index}-name`)) {
+            details.push({
+                name: this.getAttribute(`event-${index}-name`),
+                score: this.getAttribute(`event-${index}-score`),
+                rank: this.getAttribute(`event-${index}-rank`),
+                total: this.getAttribute(`event-${index}-total`)
+            });
+            index++;
+        }
+        return details;
     }
 }
 
+class DetailsPopin extends HTMLElement {
+    constructor({pseudonyme: pseudonyme, details: details}) {
+        super();
+        this.details = details;
+        this.pseudonyme = pseudonyme;
+    }
+
+    close() {
+        this.remove();
+    }
+
+    connectedCallback() {
+        this.render();
+    }
+
+    render() {
+        this.innerHTML = `
+            <div class="popin-overlay">
+                <div class="popin-content">
+                    <div class="popin-header">
+                        <h3>Détails des points - ${this.pseudonyme}</h3>
+                        <button class="popin-close">&times;</button>
+                    </div>
+                    <div class="popin-body">
+                        ${this.details.map((detail, index) => `
+                            <div class="event-detail ${index < 4 ? 'top-event' : 'bottom-event'}">
+                                <span class="event-name">${detail.name} (${detail.rank}/${detail.total})</span>
+                                <span class="event-points">${detail.score} points</span>
+                            </div>
+                        `).join('')}
+                    </div>
+                </div>
+            </div>
+        `;
+
+        // Add click listener to close button
+        const closeButton = this.querySelector('.popin-close');
+        if (closeButton) {
+            closeButton.addEventListener('click', () => this.close());
+        }
+
+        // Add click listener to overlay to close when clicking outside
+        const overlay = this.querySelector('.popin-overlay');
+        if (overlay) {
+            overlay.addEventListener('click', (e) => {
+                if (e.target === overlay) {
+                    this.close();
+                }
+            });
+        }
+    }
+}
+
+customElements.define('details-popin', DetailsPopin);
 customElements.define('classement-individuel', ClassementIndividuel);
 customElements.define('visualisation-classement-qualificatif', VisualisationClassementQualificatif);
