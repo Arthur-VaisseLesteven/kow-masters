@@ -12,19 +12,10 @@ class VisualisationClassementQualificatif extends HTMLElement {
 
     sortClassement(classement) {
         const sorted = [...classement].sort((a, b) => {
-            let compareValue;
+            const aValue = a[this.sortColumn];
+            const bValue = b[this.sortColumn];
 
-            if (this.sortColumn === 'Classement') {
-                compareValue = a.Classement - b.Classement;
-            } else if (this.sortColumn === 'Joueur') {
-                compareValue = a.Joueur.localeCompare(b.Joueur);
-            } else if (this.sortColumn === 'Evenements') {
-                compareValue = a.Evenements - b.Evenements;
-            } else if (this.sortColumn === 'Points') {
-                compareValue = a.Points - b.Points;
-            } else if (this.sortColumn === 'Region') {
-                compareValue = a.Region.localeCompare(b.Region);
-            }
+            let compareValue = (typeof aValue === 'string') ? aValue.localeCompare(bValue) : aValue - bValue;
 
             // Use rank as tie breaker
             if (compareValue === 0) {
