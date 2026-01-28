@@ -14,3 +14,18 @@ qualifications2026.ajouter(EvenementQualificatif.nommé("La V4 ça m'éclate !")
         .puis("Ysardul")
         .enDernier("Helvain")
 );
+
+qualifications2026.ajouter(EvenementQualificatif.nommé("Tournoi Jurassien KoW")
+    .surUnWeekEnd()
+    .avecPourClassement()
+		.enPremier("Jarekson")
+		.puis("Dunk")
+		.puis("Thalantir")
+		.puis("Jawjaw")
+		.puis("Tenekha")
+		.puis("LuciusForge")
+		.puis("Sousou")
+		.puis("Morzaad")
+		.puis("VargLeRedoutable")
+		.enDernier("Taybard")
+);
