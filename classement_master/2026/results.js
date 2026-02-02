@@ -29,3 +29,16 @@ qualifications2026.ajouter(EvenementQualificatif.nommé("Tournoi Jurassien KoW")
 		.puis("VargLeRedoutable")
 		.enDernier("Taybard")
 );
+
+qualifications2026.ajouter(EvenementQualificatif.nommé("Launagamers 2026")
+    .surUnWeekEnd()
+    .avecPourClassement()
+        .enPremier("Nayko")
+        .puis("Ketep")
+        .puis("El_chatardo")
+        .puis("Kutchuc")
+        .puis("Helvain")
+        .puis("MaSeDrIm")
+        .puis("Lauzerg974")
+        .enDernier("Nabot")
+);
