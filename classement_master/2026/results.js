@@ -42,3 +42,18 @@ qualifications2026.ajouter(EvenementQualificatif.nommé("Launagamers 2026")
         .puis("Lauzerg974")
         .enDernier("Nabot")
 );
+
+qualifications2026.ajouter(EvenementQualificatif.nommé("King in the North VII")
+    .surUnWeekEnd()
+    .avecPourClassement()
+        .enPremier("walach")
+        .puis("Iblis")
+        .puis("Alexlesec")
+        .puis("Kenozan")
+        .puis("Fao")
+        .puis("Julo62")
+        .puis("Twerk")
+        .puis("Orckel")
+        .puis("expunk")
+        .enDernier("KENZO")
+);
