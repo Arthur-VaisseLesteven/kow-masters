@@ -35,5 +35,5 @@ const JoueursEtRegions = {
     MyNicknameIsBetterThanYours: 'Jaune',
     Kintz: 'Violet',
     Lyhnnae: 'Jaune',
-    Nabot; 'Rouge',
+    Nabot: 'Rouge',
 };
