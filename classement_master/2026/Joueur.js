@@ -31,4 +31,9 @@ const JoueursEtRegions = {
     biak40: 'Orange',
     expunk : 'Verte',
     walach: 'Verte',
+    Maximork: 'Violet',
+    MyNicknameIsBetterThanYours: 'Jaune',
+    Kintz: 'Violet',
+    Lyhnnae: 'Jaune',
+    Nabot; 'Rouge',
 };
