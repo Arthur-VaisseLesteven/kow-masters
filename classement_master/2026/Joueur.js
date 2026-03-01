@@ -27,7 +27,7 @@ const JoueursEtRegions = {
     Morzaad: 'Vert Clair',
     MyNicknameIsBetterThanYours: 'Jaune',
     Nabot: 'Rouge',
-    Nayko_le_Rat: 'Rouge',
+    Nayko: 'Rouge',
     Orckel: 'Verte',
     Silence: 'Vert Clair',
     Sousou: 'Violet',
