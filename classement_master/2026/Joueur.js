@@ -29,7 +29,7 @@ const JoueursEtRegions = {
     Nabot: 'Rouge',
     Nayko_le_Rat: 'Rouge',
     Orckel: 'Verte',
-    Silence: 'Vert Clair',
+    Siilence: 'Vert Clair',
     Sousou: 'Violet',
     Taybard: 'Cyan',
     Tenekha: 'Cyan',
