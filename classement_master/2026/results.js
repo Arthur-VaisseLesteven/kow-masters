@@ -71,19 +71,6 @@ qualifications2026.ajouter(EvenementQualificatif.nommé("Tournoi Jurassien KoW 2
 		.enDernier("VargLeRedoutable")
 );
 
-qualifications2026.ajouter(EvenementQualificatif.nommé("Tournoi Jurassien KoW 2")
-    .surUnWeekEnd()
-    .avecPourClassement()
-		.enPremier("Maximork")
-		.puis("LuciusForge")
-		.puis("Kintz")
-		.puis("MyNicknameIsBetterThanYours")
-		.puis("Jawjaw")
-		.puis("Sousou")
-		.puis("Lyhnnae")
-		.enDernier("VargLeRedoutable")
-);
-
 qualifications2026.ajouter(EvenementQualificatif.nommé("Ork'N Games 2026")
     .surUnWeekEnd()
     .avecPourClassement()
