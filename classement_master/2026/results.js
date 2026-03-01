@@ -83,3 +83,18 @@ qualifications2026.ajouter(EvenementQualificatif.nommé("Tournoi Jurassien KoW 2
 		.puis("Lyhnnae")
 		.enDernier("VargLeRedoutable")
 );
+
+qualifications2026.ajouter(EvenementQualificatif.nommé("Ork'N Games 2026")
+    .surUnWeekEnd()
+    .avecPourClassement()
+		.enPremier("Siilence")
+		.puis("Jarekson")
+		.puis("Nayko_le_Rat")
+		.puis("El_chatardo")
+		.puis("Kutchuc")
+		.puis("eric")
+		.puis("biak40")
+		.puis("MaSeDrIm")
+   		.puis("Lauzerg974")
+		.enDernier("Helvain")
+);
