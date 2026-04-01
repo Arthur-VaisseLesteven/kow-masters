@@ -85,3 +85,14 @@ qualifications2026.ajouter(EvenementQualificatif.nommé("Ork'N Games 2026")
    		.puis("Lauzerg974")
 		.enDernier("Helvain")
 );
+
+qualifications2026.ajouter(EvenementQualificatif.nommé("La Grande Charge 2026")
+    .surUnJour()
+    .avecPourClassement()
+		.enPremier("Ketep")
+		.puis("MyNicknameIsBetterThanYours")
+		.puis("Lyhnnae")
+		.puis("Kintz")
+		.puis("SirThomasNoMore")
+		.enDernier("Jawjaw")
+);
