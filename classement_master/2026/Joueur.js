@@ -30,6 +30,7 @@ const JoueursEtRegions = {
     Nayko_le_Rat: 'Rouge',
     Orckel: 'Verte',
     Siilence: 'Vert Clair',
+    SirThomasNoMore: 'Jaune',
     Sousou: 'Violet',
     Taybard: 'Cyan',
     Tenekha: 'Cyan',
