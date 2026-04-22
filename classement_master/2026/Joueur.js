@@ -1,7 +1,10 @@
 const JoueursEtRegions = {
     Alexlesec: 'Verte',
+    Balthus: 'Violet',
     biak40: 'Orange',
     BOSS: 'Rouge',
+    BrG: 'Cyan',
+    Bynouz: 'Violet',
     Chapelier:'Orange',
     Dunk: 'Cyan',
     El_chatardo: 'Rouge',
@@ -24,6 +27,7 @@ const JoueursEtRegions = {
     Lyhnnae: 'Jaune',
     MaSeDrIm: 'Rouge',
     Maximork: 'Violet',
+    MorpheeTheJoker: 'Violet',
     Morzaad: 'Vert Clair',
     MyNicknameIsBetterThanYours: 'Jaune',
     Nabot: 'Rouge',
