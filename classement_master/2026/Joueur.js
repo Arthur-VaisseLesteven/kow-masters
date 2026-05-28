@@ -39,6 +39,7 @@ const JoueursEtRegions = {
     Nabot: 'Rouge',
     Nayko_le_Rat: 'Rouge',
     Noah: 'Verte',
+    ollv: 'Verte',
     Orckel: 'Verte',
     Siilence: 'Vert Clair',
     SirThomasNoMore: 'Jaune',

@@ -149,3 +149,14 @@ qualifications2026.ajouter(EvenementQualificatif.nommé("Petit Mais Costaud")
 		.puis("KENZO")
 		.enDernier("Galahad59")
 );
+
+qualifications2026.ajouter(EvenementQualificatif.nommé("Petit Mais Costaud")
+		.surUnJour()
+		.avecPourClassement()
+		.enPremier("Orckel")
+		.puis("Iblis")
+		.puis("ollv")
+		.puis("KENZO")
+		.puis("Fao")
+		.enDernier("expunk")
+);
