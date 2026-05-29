@@ -150,7 +150,7 @@ qualifications2026.ajouter(EvenementQualificatif.nommé("Petit Mais Costaud")
 		.enDernier("Galahad59")
 );
 
-qualifications2026.ajouter(EvenementQualificatif.nommé("Petit Mais Costaud")
+qualifications2026.ajouter(EvenementQualificatif.nommé("Soirée Kow II")
 		.surUnJour()
 		.avecPourClassement()
 		.enPremier("Orckel")
