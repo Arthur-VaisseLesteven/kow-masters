@@ -197,3 +197,17 @@ qualifications2026.ajouter(
     .puis("Lancelot71")
     .enDernier("Neo2"),
 );
+
+qualifications2026.ajouter(
+  EvenementQualificatif.nommé("TAK VII")
+    .surUnWeekEnd()
+    .avecPourClassement()
+    .enPremier("Dablama")
+    .puis("Kutchuc")
+    .puis("Siilence")
+    .puis("Jawjaw")
+    .puis("Torgrim")
+    .puis("Pinus")
+    .puis("Helvain")
+    .enDernier("Morzaad"),
+);
