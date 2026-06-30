@@ -211,3 +211,16 @@ qualifications2026.ajouter(
     .puis("Helvain")
     .enDernier("Morzaad"),
 );
+
+qualifications2026.ajouter(
+  EvenementQualificatif.nommé("Soirée Kow III")
+    .surUnJour()
+    .avecPourClassement()
+    .enPremier("expunk")
+    .puis("Orckel")
+    .puis("Fao")
+    .puis("walach")
+    .puis("Alexlesec")
+    .puis("ollv")
+    .enDernier("Iblis"),
+);
