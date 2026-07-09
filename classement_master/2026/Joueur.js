@@ -4,6 +4,7 @@ const JoueursEtRegions = {
   Argozs_Nai_Quasser: "Violet",
   ArjacSeta: "Verte",
   Arkhaon: "Violet",
+  Astrabell: "Rouge",
   Balthus: "Violet",
   biak40: "Orange",
   BOSS: "Rouge",

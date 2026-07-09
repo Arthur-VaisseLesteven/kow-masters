@@ -137,9 +137,7 @@ qualifications2026.ajouter(
     .puis("Fao")
     .puis("Julo62")
     .puis("Twerk")
-    .puis("KENZO")
-    .puis("Noah")
-    .enDernier("Marzu"),
+    .enDernier("KENZO"),
 );
 
 qualifications2026.ajouter(
@@ -223,4 +221,18 @@ qualifications2026.ajouter(
     .puis("Alexlesec")
     .puis("ollv")
     .enDernier("Iblis"),
+);
+
+qualifications2026.ajouter(
+  EvenementQualificatif.nommé("Ork'N Sun 2026")
+    .surUnJour()
+    .avecPourClassement()
+    .enPremier("Knurlnien")
+    .puis("Kutchuc")
+    .puis("Nabot")
+    .puis("BOSS")
+    .puis("El_chatardo")
+    .puis("Ysardul")
+    .puis("Helvain")
+    .enDernier("Astrabell"),
 );
