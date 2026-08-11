@@ -236,3 +236,17 @@ qualifications2026.ajouter(
     .puis("Helvain")
     .enDernier("Astrabell"),
 );
+
+qualifications2026.ajouter(
+  EvenementQualificatif.nommé("Lices de Bourgueuil")
+    .surUnWeekEnd()
+    .avecPourClassement()
+    .enPremier("MyNicknameIsBetterThanYours")
+    .puis("Fusil1")
+    .puis("Ch1ps")
+    .puis("MaSeDrIm")
+    .puis("Ketep")
+    .puis("Lauzerg974")
+    .puis("Chapelier")
+    .enDernier("Nabot"),
+);
