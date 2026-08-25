@@ -250,3 +250,15 @@ qualifications2026.ajouter(
     .puis("Chapelier")
     .enDernier("Nabot"),
 );
+
+qualifications2026.ajouter(
+  EvenementQualificatif.nommé("Le Réveil du Kraken")
+    .surUnJour()
+    .avecPourClassement()
+    .enPremier("Dablama")
+    .puis("Jarekson")
+    .puis("Dalendur")
+    .puis("Ezekiel")
+    .puis("Rawulf")
+    .enDernier("Pinus"),
+);
